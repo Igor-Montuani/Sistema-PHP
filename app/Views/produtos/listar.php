@@ -35,11 +35,14 @@
                                       </tr>
                                   </thead>
                                   <tbody>
-                                    <?php foreach($produtos as $prod): ?>
-                                        <tr>
-                                            <td><?= $prod['ProdutoId'] ?></td>
-                                        </tr>
-                                    <?php endforeach; ?>
+                                      <?php foreach ($produtos as $prod) : ?>
+                                          <tr>
+                                              <td><?= $prod['ProdutoId'] ?></td>
+                                              <td><?= $prod['Nome'] ?></td>
+                                              <td><?= $prod['Qtde'] ?></td>
+                                              <td><?= $prod['Valor'] ?></td>
+                                          </tr>
+                                      <?php endforeach; ?>
                                   </tbody>
                               </table>
                           </div>
